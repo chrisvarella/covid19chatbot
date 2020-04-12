@@ -1,0 +1,48 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["cya", "See you later", "Goodbye", "I am leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "spread",
+         "patterns": ["how does covid-19 spread", "spread", "how does corona virus spread", "corona virus spread by touch", "corona virus spread by air"],
+         "responses": ["COVID-19 spreads by respiratory droplets from cough or sneeze, close personal contact such as touching or shaking hands, and touching something with the virus on it and touching mouth, nose and/or eyes before washing your hands!"],
+         "context_set": ""
+        },
+        {"tag": "quarantine",
+         "patterns": ["How long should I self-isolate", "how long should I quarantine myself", "should I quarantine myself", "just returned from travel outside Canada", "what does quarantine mean", "I had close contact with someone who has covid-19", "should I stay at home"],
+         "responses": ["Quarantine means that for 14 days you need to stay at home and monitor yourself, avoid contact with other and practice physical (social) distancing."],
+         "context_set": ""
+        },
+        {"tag": "isolate",
+         "patterns": ["Should I self-isolate"],
+         "responses": ["You should self-isolate if diagnosed with COVID-19, if you have the symptoms of COVID-19, if you have been exposed to COVID-19 and/or returned from travel outside of Canada"],
+         "context_set": ""
+        },
+        {"tag": "hygiene",
+         "patterns": ["Should I wash my hands", "How often should I wash my hands", "What to do when I cough", "What to do when I sneeze", "Should I touch my face", "Should I touch my eyes", "Should I touch my nose", "Should I touch my mouth"],
+         "responses": ["Proper hygiene can reduce the risks of infection and spreading. Wash your hands often with soap and water for at least 20 seconds, use alcohol-based hand sanitizer, cough or sneeze into a tissue or the bend of your arm, not your hand. Avoid touching your eyes, nose, or mouth with unwashed hands."],
+         "context_set": ""
+        },     
+        {"tag": "cleaning",
+         "patterns": ["Should I clean surfaces", "What should I clean"],
+         "responses": ["Health Canada recommends cleaning high-touch surfaces often, using household cleaners. Surfaces include: toys, toilets, phones, electronics, door handles, bedside tables, television remotes, etc."],
+         "context_set": ""
+        },       
+        {"tag": "masks",
+         "patterns": ["Should I wear a mask", "Should I wear non-medical mask"],
+         "responses": ["Wearing a non-medical mask or face covering is an additional measures you can take to protect others around you, even if you have no symptoms."],
+         "context_set": ""
+        },                 
+        {"tag": "symptoms",
+         "patterns": ["what are the symptoms", "symptoms", "symptoms of COVID-19", "symptoms of corona virus"],
+         "responses": ["The symptoms of COVID-19 include cough, fever, difficulty breathing and pneumonia in both lungs"],
+         "context_set": ""
+        }
+   ]
+}
