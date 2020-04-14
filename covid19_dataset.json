@@ -38,10 +38,25 @@
          "patterns": ["Should I wear a mask", "Should I wear non-medical mask"],
          "responses": ["Wearing a non-medical mask or face covering is an additional measures you can take to protect others around you, even if you have no symptoms."],
          "context_set": ""
-        },                 
+        }, 
+        {"tag": "gloves",
+         "patterns": ["Should I wear gloves", "Which type of gloves should I wear non-med?"],
+         "responses": ["Wearing a non-medical gloves or  is an additional measures you can take to protect others around you, even if you have no symptoms."],
+         "context_set": ""
+        }, 
         {"tag": "symptoms",
          "patterns": ["what are the symptoms", "symptoms", "symptoms of COVID-19", "symptoms of corona virus"],
          "responses": ["The symptoms of COVID-19 include cough, fever, difficulty breathing and pneumonia in both lungs"],
+         "context_set": ""
+        },
+        {"tag": "helplines",
+         "patterns": ["what are the helpline numbers", "contacts", "numbers", "call-centre"],
+         "responses": ["The help-line numbers for COVID-19 are 1-877-543-8931, mailid: communications@oahpp.ca and website- https://www.publichealthontario.ca/en/contact"],
+         "context_set": ""
+        },
+        {"tag": "websites",
+         "patterns": ["what are the reliable websites to show spread of covid-19?", "websites", "links", "useful-links","data" ],
+         "responses": ["The reliabel websites showing the spread of COVID-19 is https://www.google.com/covid19/#trends-&-data"],
          "context_set": ""
         }
    ]
