@@ -13,6 +13,7 @@ lemmatizer = WordNetLemmatizer()
 
 
 app = Flask(__name__)  # creating the Flask class object
+app.debug = False
 
 
 def loadmodel():

@@ -1,0 +1,9 @@
+test:
+    tags:
+    - ci
+    script:
+    - npm start
+    - export PATH=$PATH:/usr/local/bundle/bin
+    - dpl --provider=heroku --app=covid19cbot --api-key=$herokukey --strategy=git
+    only:
+    - master      

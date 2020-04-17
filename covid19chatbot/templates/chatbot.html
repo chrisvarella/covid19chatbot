@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <h3>COVID-19 - Chatbot</h3>
+  </head>
+  <body>
+    <form name="frmChat" action="/chatbox" method="post">
+      <table>
+        <tr>
+          <td colspan="2">
+            <textarea
+              name="chatlog"
+              rows="20"
+              cols="40"
+              style="background-color: lightgray;"
+            >
+{{ chatlog }}</textarea
+            >
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" id="entrybox" name="entrybox" size="30" /></td>
+          <td><input type="submit" name="btnSend" title="Send" /></td>
+        </tr>
+      </table>
+    </form>
+    <script>
+      function getBotResponse() {
+        var rawText = $("#entrybox").val();
+        var userHtml = "<p><span>" + rawText + "</span></p>";
+        $("#entrybox").val("");
+        $("#chatlog").append(userHtml);
+        document
+          .getElementById("entrybox")
+          .scrollIntoView({ block: "start", behavior: "smooth" });
+        $.get("/get", { msg: rawText }).done(function (data) {
+          var botHtml = "<p><span>" + data + "</span></p>";
+          $("#chatbox").append(botHtml);
+          document
+            .getElementById("entrybox")
+            .scrollIntoView({ block: "start", behavior: "smooth" });
+        });
+      }
+      $("#entrybox").keypress(function (e) {
+        if (e.which == 13) {
+          getBotResponse();
+        }
+      });
+    </script>
+  </body>
+</html>
