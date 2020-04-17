@@ -1,7 +1,8 @@
 Flask==1.1.1
+gunicorn==19.9.0
 Keras==2.3.1
 nltk==3.4.5
 numpy==1.18.1
 pickleshare==0.7.5
 setuptools==41.0.0
-tensorflow==2.0.0
+tensorflow==2.1.0
